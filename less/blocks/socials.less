@@ -1,0 +1,39 @@
+.socials {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.socials__btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  color: @grey;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 10px;
+  border: 1px solid @grey;
+  border-radius: 50%;
+  
+  &:hover {
+    color: #fff;
+    background-color: @deco;
+    border-color: @deco;
+  }
+
+  &--tw {
+    background: url(../img/icon-tw-grey.png) no-repeat center;
+  }
+  
+  &--tw:hover {
+    background: @deco url(../img/icon-tw-white.png) no-repeat center;
+  }
+  
+  &--dr {
+    background: url(../img/icon-dr-grey.png) no-repeat center;
+  }
+  
+  &--dr:hover {
+    background: @deco url(../img/icon-dr-white.png) no-repeat center;
+  }
+}

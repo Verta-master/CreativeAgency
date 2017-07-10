@@ -7,4 +7,50 @@
 .footer-contacts__wrap {
   max-width: 1120px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts__about,
+.footer-contacts__info,
+.footer-contacts__subscription {
+  width: 30%;
+}
+
+.footer-contacts__title {
+  font-weight: 600;
+  color: @deco;
+  text-transform: uppercase;
+}
+
+.footer-contacts__address {
+  font-style: normal;
+}
+
+.footer-contacts__info a {
+  color: @grey;
+  display: block;
+}
+
+.footer-contacts__form {
+  input,
+  button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+  }
+  
+  input {
+    background-color: transparent;
+    color: @grey;
+    border: 1px solid @grey;
+  }
+  
+  button {
+    background-color: @deco;
+    color: #fff;
+    text-transform: uppercase;
+  }
 }

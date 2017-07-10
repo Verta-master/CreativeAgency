@@ -1,16 +1,28 @@
 .btn {
+  display: block;
   font-size: 16px;
   line-height: 40px;
+  text-align: center;
   color: #fff;
   text-transform: uppercase;
-  min-width: 165px;
+  width: 165px;
   background-color: @deco;
   border-radius: 20px;
   border: 2px solid @deco;
   box-sizing: border-box;
   
-  &:hover {
+  &:hover,
+  &--light {
     background-color: transparent;
     color: @deco;
+  }
+  
+  &--light:hover {
+    background-color: @deco;
+    color: #fff;
+  }
+  
+  &--center {
+    margin: 0 auto;
   }
 }
