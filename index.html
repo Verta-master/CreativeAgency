@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta  name="viewport" content="width=device-width,initial-scale=1">
     <title>Creative Agency website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header-main">
-    <div class="header-wrap">
+    <div class="header-main__wrap">
       <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23"><path id="icon" class="cls-1" d="M281,39h25v5H281V39Zm0,9h17v5H281V48Zm0,9h10v5H281V57Z" transform="translate(-281 -39)"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23"><path id="icon" class="logo__color" d="M281,39h25v5H281V39Zm0,9h17v5H281V48Zm0,9h10v5H281V57Z" transform="translate(-281 -39)"/>
         </svg>
         <span class="logo__name">FAPOR</span>
       </div>
@@ -31,10 +31,21 @@
   
   <main>
     <section class="slider">
-      
-      <p class="slider__slogan">We create Amazing Things</p>
-      <h1 class="slider__h1">Wellcome to FAPOR</h1>
-      <a href="#" class="slider__link btn">Learn MoRe</a>
+      <div class="fotorama"
+        data-loop="true"
+        data-autoplay="true"
+        data-keyboard="true"
+        data-arrows="always">
+        <img src="img/bg-slider-1.jpg" alt="Slide 1" width="1902" height="992">
+        <img src="img/bg-slider-2.jpg" alt="Slide 2" width="1902" height="992">
+        <img src="img/bg-slider-3.jpg" alt="Slide 3" width="1902" height="992">
+        <img src="img/bg-slider-4.jpg" alt="Slide 4" width="1902" height="992">
+      </div>
+      <div class="slider__text">
+        <p class="slider__slogan">We create Amazing Things</p>
+        <h1 class="slider__h1">Wellcome to FAPOR</h1>
+        <a href="#" class="slider__link btn">Learn MoRe</a>
+      </div>
     </section>
     
     <section class="wedo">
@@ -225,7 +236,7 @@
         <p class="footer-contacts__title">Subscribe to our newsletter</p>
         <form action="#" method="post" class="footer-contacts__form">
           <input type="email" name="email" placeholder="Enter your email address">
-          <button type="submit">SUBSCRIBLE NOW</button>
+          <button type="submit">SUBSCRIBE NOW</button>
         </form>
       </div>
     </div>
@@ -244,6 +255,9 @@
       </div>
     </div>
   </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/fotorama.js"></script>
 <!--
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
