@@ -18,7 +18,7 @@
       </div>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link menu__active">Home</a></li>
+          <li class="menu__item menu__active"><a class="menu__link">Home</a></li>
           <li class="menu__item"><a href="service.html" class="menu__link">service</a></li>
           <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
           <li class="menu__item"><a href="works.html" class="menu__link">Works</a></li>
@@ -96,29 +96,29 @@
         <input type="radio" id="crafts" name="filter" class="works__crafts">
         <label for="crafts">Crafts</label>
         <ul class="works__list">
-          <li class="works__item web">
-              <img src="img/work-6.jpg" width="481" height="357" alt="Web">
+          <li class="works__item web" data-featherlight="img/work-6.jpg">
+            <img src="img/work-6.jpg" width="481" height="357" alt="Web">
           </li>
-          <li class="works__item web">
-              <img src="img/work-3.jpg" width="481" height="357" alt="Web">
+          <li class="works__item web" data-featherlight="img/work-3.jpg">
+            <img src="img/work-3.jpg" width="481" height="357" alt="Web">
           </li>
-          <li class="works__item creative">
-              <img src="img/work-2.jpg" width="481" height="357" alt="Creative">
+          <li class="works__item creative" data-featherlight="img/work-2.jpg">
+            <img src="img/work-2.jpg" width="481" height="357" alt="Creative">
           </li>
-          <li class="works__item creative">
-              <img src="img/work-7.jpg" width="481" height="357" alt="Creative">
+          <li class="works__item creative" data-featherlight="img/work-7.jpg">
+            <img src="img/work-7.jpg" width="481" height="357" alt="Creative">
           </li>
-          <li class="works__item print">
-              <img src="img/work-5.jpg" width="481" height="357" alt="Print">
+          <li class="works__item print" data-featherlight="img/work-5.jpg">
+            <img src="img/work-5.jpg" width="481" height="357" alt="Print">
           </li>
-          <li class="works__item media">
-              <img src="img/work-4.jpg" width="481" height="357" alt="Media">
+          <li class="works__item media" data-featherlight="img/work-4.jpg">
+            <img src="img/work-4.jpg" width="481" height="357" alt="Media">
           </li>
-          <li class="works__item crafts">
-              <img src="img/work-1.jpg" width="481" height="357" alt="Crafts">
+          <li class="works__item crafts" data-featherlight="img/work-1.jpg">
+            <img src="img/work-1.jpg" width="481" height="357" alt="Crafts">
           </li>
-          <li class="works__item crafts">
-              <img src="img/work-8.jpg" width="481" height="357" alt="Crafts">
+          <li class="works__item crafts" data-featherlight="img/work-8.jpg">
+            <img src="img/work-8.jpg" width="481" height="357" alt="Crafts">
           </li>
         </ul>
       </div>
@@ -131,7 +131,24 @@
         <div class="how__block">
           <h2 class="title-h2 title-h2--left">How we work</h2>
           <p class="how__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
-          
+          <div class="how__check">
+            <span class="how__number">01</span>
+            <input type="checkbox" name="how" id="how-01" class="how__input">
+            <label for="how-01" class="how__label">Sed ut perspiciatis unde omnis iste natus error sit</label>
+            <p class="how__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
+          </div>
+          <div class="how__check">
+            <span class="how__number">02</span>
+            <input type="checkbox" name="how" id="how-02" class="how__input">
+            <label for="how-02" class="how__label">Nemo enim ipsam voluptatem quia voluptas sit aut </label>
+            <p class="how__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
+          </div>
+          <div class="how__check">
+            <span class="how__number">03</span>
+            <input type="checkbox" name="how" id="how-03" class="how__input">
+            <label for="how-03" class="how__label">Beque porro quisquam est, qui dolorem ipsum quia</label>
+            <p class="how__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -315,6 +332,7 @@
       $('.bxslider').bxSlider();
     });
   </script>
+  <script src="js/featherlight.js"></script>
   
 <!--
     <script src="js/picturefill.min.js"></script>
