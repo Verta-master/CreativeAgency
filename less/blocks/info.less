@@ -1,0 +1,67 @@
+.info {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.info__wrap {
+  max-width: 1390px;
+  padding-left: 17px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.info__form {
+  display: flex;
+  flex-direction: column;
+  margin-right: 35px;
+}
+
+.info__input,
+.info__area {
+  width: 890px;
+  box-sizing: border-box;
+  background-color: @light-grey;
+  border: 1px solid #ebebeb;
+  padding-left: 13px;
+  padding-right: 13px;
+  
+  &:focus {
+    border-color: @deco;
+  }
+}
+
+.info__input {
+  min-height: 38px;
+  margin-bottom: 10px;
+}
+
+.info__area {
+  min-height: 250px;
+  margin-bottom: 40px;
+}
+
+.info__btn {
+  width: 148px;
+  min-height: 50px;
+  outline: none;
+  border: none;
+  background-color: @deco;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  &:hover {
+    color: @deco;
+    background-color: transparent;
+    border: 1px solid @deco;
+  }
+}
+
+.info__map {
+  width: 313px;
+  height: 208px;
+  background-image: url(../img/map.jpg);
+  margin-top: 45px;
+}

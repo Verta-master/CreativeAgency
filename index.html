@@ -253,26 +253,30 @@
     <section class="review">
       <div class="review__wrap">
         <h2 class="title-h2">WHAT OUR CLIENTS SAY</h2>
-        <ul class="review__slider bxslider">
-          <li class="review__item">
-            <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-            <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-            <p class="review__name">Larry Jane</p>
-            <p class="review__job">General Manager</p>
-          </li>
-          <li class="review__item">
-            <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-            <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-            <p class="review__name">Larry Jane</p>
-            <p class="review__job">General Manager</p>
-          </li>
-          <li class="review__item">
-            <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-            <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-            <p class="review__name">Larry Jane</p>
-            <p class="review__job">General Manager</p>
-          </li>
-        </ul>
+        <div class="swiper-container">
+          <ul class="review__slider swiper-wrapper">
+            <li class="review__item swiper-slide">
+              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
+              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+              <p class="review__name">Larry Jane</p>
+              <p class="review__job">General Manager</p>
+            </li>
+            <li class="review__item swiper-slide">
+              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
+              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+              <p class="review__name">Larry Jane</p>
+              <p class="review__job">General Manager</p>
+            </li>
+            <li class="review__item swiper-slide">
+              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
+              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
+              <p class="review__name">Larry Jane</p>
+              <p class="review__job">General Manager</p>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
     
@@ -295,10 +299,10 @@
       </div>
       <div class="footer-contacts__info">
         <p class="footer-contacts__title">Contact INFO</p>
-        <address class="footer-contacts__address">PO Box 17122 Nollins Street 5034 Los Angelos</address>
-        <a href="Tel:18005550658" class="footer-contacts__phone">Phone: 1800555.0658</a>
-        <a href="mailto:support@fapor.com" class="footer-contacts__email">Email: support@fapor.com</a>
-        <a href="http://fapor.com" class="footer-contacts__web">Web: fapor.com</a>
+        <address class="footer-contacts__address">PO Box 17122 Collins Street 5034 Los Angelos</address>
+        <a href="+18005550658" class="footer-contacts__phone">Phone: <span>1800555.0658</span></a>
+        <a href="mailto:support@fapor.com" class="footer-contacts__email">Email: <span>support@fapor.com</span></a>
+        <a href="http://fapor.com" class="footer-contacts__web">Web: <span>fapor.com</span></a>
       </div>
       <div class="footer-contacts__subscription">
         <p class="footer-contacts__title">Subscribe to our newsletter</p>
@@ -326,14 +330,15 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/fotorama.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/featherlight.js"></script>
+  <script src="js/swiper.min.js"></script>
   <script>
-    $(document).ready(function(){
-      $('.bxslider').bxSlider();
+    var swiper = new Swiper('.swiper-container', {
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      spaceBetween: 30
     });
   </script>
-  <script src="js/featherlight.js"></script>
-  
 <!--
     <script src="js/picturefill.min.js"></script>
     <script src="js/script.js"></script>
