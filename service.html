@@ -11,15 +11,15 @@
 <body>
   <header class="header-main">
     <div class="header-main__wrap">
-      <div class="logo">
+      <a href="index.html" class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="23" viewBox="0 0 25 23"><path id="icon" class="logo__color" d="M281,39h25v5H281V39Zm0,9h17v5H281V48Zm0,9h10v5H281V57Z" transform="translate(-281 -39)"/>
         </svg>
         <span class="logo__name">FAPOR</span>
-      </div>
+      </a>
       <nav class="menu">
         <ul class="menu__list">
-          <li class="menu__item menu__active"><a class="menu__link">Home</a></li>
-          <li class="menu__item"><a href="service.html" class="menu__link">service</a></li>
+          <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+          <li class="menu__item menu__active"><a class="menu__link">service</a></li>
           <li class="menu__item"><a href="about.html" class="menu__link">About</a></li>
           <li class="menu__item"><a href="works.html" class="menu__link">Works</a></li>
           <li class="menu__item"><a href="contact.html" class="menu__link">contact</a></li>
@@ -29,24 +29,13 @@
   </header>
   
   <main>
-    <section class="slider">
-      <div class="fotorama"
-        data-loop="true"
-        data-autoplay="true"
-        data-keyboard="true"
-        data-arrows="always">
-        <img src="img/bg-slider-1.jpg" alt="Slide 1" width="1902" height="992">
-        <img src="img/bg-slider-2.jpg" alt="Slide 2" width="1902" height="992">
-        <img src="img/bg-slider-3.jpg" alt="Slide 3" width="1902" height="992">
-        <img src="img/bg-slider-4.jpg" alt="Slide 4" width="1902" height="992">
-      </div>
-      <div class="slider__text">
-        <p class="slider__slogan">We create Amazing Things</p>
-        <h1 class="slider__h1">Wellcome to FAPOR</h1>
-        <a href="about.html" class="slider__link btn">Learn MoRe</a>
+    <section class="promo">
+      <div class="promo__wrap">
+        <h1 class="promo__h1">Our Services</h1>
+        <p class="promo__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
       </div>
     </section>
-    
+
     <section class="wedo">
       <div class="wedo__wrap">
         <h2 class="title-h2">We will help manage your Business</h2>
@@ -68,63 +57,7 @@
       </div>
     </section>
     
-    <section class="we">
-      <div class="we__wrap">
-        <img src="img/who-we-are.jpg" alt="Who we are" class="we__img" width="661" height="485">
-        <div class="we__block">
-          <h2 class="title-h2 title-h2--left">Who WE ARE</h2>
-          <p class="we__text">We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch.</p>
-          <a href="about.html" class="slider__link btn btn--light">Learn MoRe</a>
-        </div>
-      </div>
-    </section>
-    
-    <section class="works">
-      <h2 class="title-h2">RECENT WORKS</h2>
-      <div class="works__trigger">
-        <input type="radio" id="all" name="filter" class="works__all" checked>
-        <label for="all">All</label>
-        <input type="radio" id="web" name="filter" class="works__web">
-        <label for="web">Web</label>
-        <input type="radio" id="creative" name="filter" class="works__creative">
-        <label for="creative">Creative</label>
-        <input type="radio" id="print" name="filter" class="works__print">
-        <label for="print">Print</label>
-        <input type="radio" id="media" name="filter" class="works__media">
-        <label for="media">Media</label>
-        <input type="radio" id="crafts" name="filter" class="works__crafts">
-        <label for="crafts">Crafts</label>
-        <ul class="works__list">
-          <li class="works__item web" data-featherlight="img/work-6.jpg">
-            <img src="img/work-6.jpg" width="481" height="357" alt="Web">
-          </li>
-          <li class="works__item web" data-featherlight="img/work-3.jpg">
-            <img src="img/work-3.jpg" width="481" height="357" alt="Web">
-          </li>
-          <li class="works__item creative" data-featherlight="img/work-2.jpg">
-            <img src="img/work-2.jpg" width="481" height="357" alt="Creative">
-          </li>
-          <li class="works__item creative" data-featherlight="img/work-7.jpg">
-            <img src="img/work-7.jpg" width="481" height="357" alt="Creative">
-          </li>
-          <li class="works__item print" data-featherlight="img/work-5.jpg">
-            <img src="img/work-5.jpg" width="481" height="357" alt="Print">
-          </li>
-          <li class="works__item media" data-featherlight="img/work-4.jpg">
-            <img src="img/work-4.jpg" width="481" height="357" alt="Media">
-          </li>
-          <li class="works__item crafts" data-featherlight="img/work-1.jpg">
-            <img src="img/work-1.jpg" width="481" height="357" alt="Crafts">
-          </li>
-          <li class="works__item crafts" data-featherlight="img/work-8.jpg">
-            <img src="img/work-8.jpg" width="481" height="357" alt="Crafts">
-          </li>
-        </ul>
-      </div>
-      <a href="works.html" class="btn btn--light btn--center">Show All</a>
-    </section>
-    
-    <section class="how">
+    <section class="how how--service">
       <div class="how__wrap">
         <img src="img/desktop.png" alt="Screen" class="how__img" width="359" height="447">
         <div class="how__block">
@@ -171,66 +104,6 @@
       </div>
     </section>
     
-    <section class="team">
-      <div class="team__wrap">
-        <h2 class="title-h2">Meet our team</h2>
-        <ul class="team__list">
-          <li class="team__person">
-            <img src="img/person-1.jpg" alt="Joshep WILLIAM" class="team__img" width="130" height="130">
-            <div class="team__block">
-              <p class="team__name">Joshep WILLIAM</p>
-              <p class="team__job">Creative Director</p>
-              <p class="team__text"> Website or whether you are looking for a design refresh we are confident you will be pleased.</p>
-              <div class="team__social">
-                <a href="#" class="team__fb">f</a>
-                <a href="#" class="team__tw"></a>
-                <a href="#" class="team__in">in</a>
-              </div>
-            </div>
-          </li>
-          <li class="team__person">
-            <img src="img/person-2.jpg" alt="Liam Aiken" class="team__img" width="130" height="130">
-            <div class="team__block">
-              <p class="team__name">Liam Aiken</p>
-              <p class="team__job">Web Developer</p>
-              <p class="team__text"> Website or whether you are looking for a design refresh we are confident you will be pleased.</p>
-              <div class="team__social">
-                <a href="#" class="team__fb">f</a>
-                <a href="#" class="team__tw"></a>
-                <a href="#" class="team__in">in</a>
-              </div>
-            </div>
-          </li>
-          <li class="team__person">
-            <img src="img/person-3.jpg" alt="Franklyn Ajaye" class="team__img" width="130" height="130">
-            <div class="team__block">
-              <p class="team__name">Franklyn Ajaye</p>
-              <p class="team__job">UX/Ui Designer</p>
-              <p class="team__text"> Website or whether you are looking for a design refresh we are confident you will be pleased.</p>
-              <div class="team__social">
-                <a href="#" class="team__fb">f</a>
-                <a href="#" class="team__tw"></a>
-                <a href="#" class="team__in">in</a>
-              </div>
-            </div>
-          </li>
-          <li class="team__person">
-            <img src="img/person-4.jpg" alt="Devon Alan" class="team__img" width="130" height="130">
-            <div class="team__block">
-              <p class="team__name">Devon Alan</p>
-              <p class="team__job">Marketing</p>
-              <p class="team__text"> Website or whether you are looking for a design refresh we are confident you will be pleased.</p>
-              <div class="team__social">
-                <a href="#" class="team__fb">f</a>
-                <a href="#" class="team__tw"></a>
-                <a href="#" class="team__in">in</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    
     <section class="features">
       <div class="features__wrap">
         <h2 class="title-h2">Our FEATURES</h2>
@@ -245,47 +118,7 @@
           <li class="features__item">Website or whether you are looking for a design refresh we are confident you will be pleased with the results.</li>
           <li class="features__item">Whether you need to create a brand from scratch, including marketing materials and a beautiful and functional.</li>
         </ul>
-        <a href="service.html" class="btn btn--light btn--center">Learn More</a>
-      </div>
-    </section>
-    
-    <section class="review">
-      <div class="review__wrap">
-        <h2 class="title-h2">WHAT OUR CLIENTS SAY</h2>
-        <div class="swiper-container">
-          <ul class="review__slider swiper-wrapper">
-            <li class="review__item swiper-slide">
-              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-              <p class="review__name">Larry Jane</p>
-              <p class="review__job">General Manager</p>
-            </li>
-            <li class="review__item swiper-slide">
-              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-              <p class="review__name">Larry Jane</p>
-              <p class="review__job">General Manager</p>
-            </li>
-            <li class="review__item swiper-slide">
-              <img src="img/person-5.jpg" alt="Reviewer" class="review__img" width="90" height="90">
-              <p class="review__text">Praesent tincidunt molestie libero mollis porta. Faucibus leo, ac aliquet magna. Vivamus ullamcorper mollis leo, at sagittis mi pellentesque quis. Praesent nec elit tristique.</p>
-              <p class="review__name">Larry Jane</p>
-              <p class="review__job">General Manager</p>
-            </li>
-          </ul>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="clients">
-      <div class="clients__wrap">
-        <img src="img/logo-brand-1.jpg" alt="" class="clients__logo" width="139" height="61">
-        <img src="img/logo-brand-2.jpg" alt="" class="clients__logo" width="149" height="45">
-        <img src="img/logo-brand-3.jpg" alt="" class="clients__logo" width="160" height="41">
-        <img src="img/logo-brand-4.jpg" alt="" class="clients__logo" width="158" height="51">
-        <img src="img/logo-brand-5.jpg" alt="" class="clients__logo" width="149" height="46">
+        <a href="#" class="btn btn--light btn--center">Learn More</a>
       </div>
     </section>
   </main>
