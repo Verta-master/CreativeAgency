@@ -7,7 +7,11 @@
 }
 
 .footer-contacts__wrap {
-  max-width: 1120px;
+  width: 1140px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -87,5 +91,28 @@
 .footer-contacts__email:hover {
   span {
     color: @deco;
+  }
+}
+
+//----------------------------------
+@media @tablet {
+  .footer-contacts__wrap {
+    width: 768px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .footer-contacts__about {
+    width: 200px;
+  }
+  
+  .footer-contacts__info {
+    width: 200px;
+  }
+  
+  .footer-contacts__info--map {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
   }
 }

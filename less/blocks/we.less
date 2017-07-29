@@ -15,6 +15,7 @@
 .we__img {
   width: 660px;
   height: 485px;
+  max-width: 50%;
 }
 
 .we__block {
@@ -22,7 +23,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 510px;
+  width: 50%;
   padding-left: 70px;
   padding-right: 115px;
   padding-top: 100px;
@@ -32,4 +33,33 @@
   margin-top: 0;
   margin-bottom: 70px;
   width: 100%;
+}
+//-------------------------------------
+@media @tablet {
+  .we {
+    padding: 70px 0;
+    overflow-x: hidden;
+  }
+  
+  .we__img {
+    width: 400px;
+    height: 280px;
+  }
+  
+  .we__block {
+    padding: 10px 20px;
+    max-width: 50%;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  
+  .we__wrap {
+    max-width: 768px;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .we__text {
+    margin-bottom: 0;
+  }
 }

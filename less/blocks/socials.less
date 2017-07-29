@@ -70,6 +70,7 @@
 
 .socials__wrap {
   width: 1123px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -78,10 +79,29 @@
 .socials__block {
   display: flex;
   align-items: center;
+  width: 20%;
   
   &:hover {
     .socials__text {
       color: @deco;
     }
+  }
+}
+
+//------------------------------
+@media @tablet {
+  .socials__wrap {
+    width: 738px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .socials__block {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  
+  .socials--band {
+    padding: 50px 0 30px 0;
   }
 }

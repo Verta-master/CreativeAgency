@@ -7,6 +7,7 @@
 
 .review__wrap {
   width: 1120px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -34,4 +35,26 @@
   text-transform: uppercase;
   font-weight: 600;
   color: @deco;
+}
+
+//------------------------------
+@media @tablet {
+  .review {
+    padding: 70px 10px;
+    box-sizing: border-box;
+  }
+  
+  .review__wrap {
+    width: 748px;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .review__text {
+    max-width: 80%;
+  }
+  
+  .review__item {
+    width: 80%;
+  }
 }
