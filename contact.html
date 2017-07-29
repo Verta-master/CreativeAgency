@@ -16,7 +16,8 @@
         </svg>
         <span class="logo__name">FAPOR</span>
       </a>
-      <nav class="menu">
+      <nav class="menu menu--closed">
+        <button class="menu__toggle"></button>
         <ul class="menu__list">
           <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
           <li class="menu__item"><a href="service.html" class="menu__link">service</a></li>
@@ -46,12 +47,14 @@
           <textarea name="data" id="info" class="info__area" placeholder="Write message"></textarea>
           <button type="submit" class="info__btn">SUBMIT FORM</button>
         </form>
-        <div class="footer-contacts__info">
-          <h3 class="title-h3 title-h3--left">Contact INFO</h3>
-          <address class="footer-contacts__address">PO Box 17122 Collins Street 5034 Los Angelos</address>
-          <a href="+18005550658" class="footer-contacts__phone">Phone: <span>1800555.0658</span></a>
-          <a href="mailto:support@fapor.com" class="footer-contacts__email">Email: <span>support@fapor.com</span></a>
-          <a href="http://fapor.com" class="footer-contacts__web">Web: <span>fapor.com</span></a>
+        <div class="footer-contacts__info footer-contacts__info--map">
+          <div class="info__block">
+            <h3 class="title-h3 title-h3--left">Contact INFO</h3>
+            <address class="footer-contacts__address">PO Box 17122 Collins Street<br>5034 Los Angelos</address>
+            <a href="+18005550658" class="footer-contacts__phone">Phone: <span>1800555.0658</span></a>
+            <a href="mailto:support@fapor.com" class="footer-contacts__email">Email: <span>support@fapor.com</span></a>
+            <a href="http://fapor.com" class="footer-contacts__web">Web: <span>fapor.com</span></a>
+          </div>
           <div class="info__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1879.53810601567!2d-118.3608480197374!3d34.173376825571566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2959040ddb63f%3A0xbd410cde13a3412!2s5034+Collins+St%2C+North+Hollywood%2C+CA+91601%2C+USA!5e0!3m2!1sen!2suk!4v1501229972721" width="313" height="208" style="border:0" allowfullscreen></iframe>
           </div>
@@ -129,9 +132,6 @@
       spaceBetween: 30
     });
   </script>
-<!--
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/script.js"></script>
--->
+  <script src="js/script.js"></script>
 </body>
 </html>
