@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.menu__toggle {
+  display: none;
+}
+
 .menu__list {
   display: flex;
   justify-content: space-between;
@@ -52,5 +56,70 @@
   
   &:hover .menu__link {
     color: #fff;
+  }
+}
+//-------------------------------
+@media @mobile {
+  .menu--closed .menu__list {
+    display: none;
+  }
+
+  .menu__toggle {
+    display: block;
+    border: none;
+    outline: none;
+    margin-right: 17px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .menu--closed .menu__toggle {
+    background-image: url(../img/icon-menu-ham.svg);
+    width: 30px;
+    height: 19px;
+  }
+
+  .menu--opened .menu__toggle {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+  }
+  
+  .menu--opened {
+    width: 100%;
+    
+    .menu__list {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+
+    .menu__item {
+      width: 100%;
+      min-height: 50px;
+      padding-top: 15px;
+      border-top: 2px solid @deco;
+      font-size: 18px;
+      
+      &:last-child {
+        min-height: 35px;
+      }
+      
+      &:hover::after {
+        display: none;
+      }
+    }
+    
+    .menu__active::after {
+      display: none;
+    }
+    
+    .menu__active .menu__link {
+      color: @deco;
+    }
   }
 }

@@ -122,3 +122,30 @@
     width: 100%;
   }
 }
+//------------------------
+@media @mobile {
+  .how {
+    padding-top: 20px;
+  }
+  
+  .how__wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .how__block {
+    padding-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .how__text {
+    text-align: center;
+  }
+  
+  .how__input:not(checked)+.how__label::before {
+    top: 40%;
+  }
+}
